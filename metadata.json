@@ -1,0 +1,6 @@
+{
+  "name": "تایپ‌یار - آموزش تعاملی تایپ ده انگشتی",
+  "description": "سامانه مدرن آموزش تایپ ده انگشتی فارسی، انگلیسی، عربی و کدنویسی به همراه کیبورد تعاملی، آزمون سرعت و مسابقات آنلاین",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

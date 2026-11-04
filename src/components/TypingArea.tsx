@@ -5,7 +5,7 @@ import { RotateCcw, Volume2, VolumeX, Flame, Target, Clock, Zap } from 'lucide-r
 
 interface TypingAreaProps {
   content: string;
-  language: Language;
+  language: Language; 
   lessonTitle?: string;
   soundEnabled: boolean;
   onSoundToggle: () => void;
@@ -355,7 +355,11 @@ export const TypingArea: React.FC<TypingAreaProps> = ({
             return (
               <span
                 key={index}
-                className={`relative inline-block ${charStyle} ${char === ' ' ? 'w-2.5' : ''}`}
+                className={`
+                  relative inline-block ${charStyle}
+                  ${char === ' ' ? 'w-2.5' : ''}
+                  ${isCurrent ? 'bg-emerald-500/10 dark:bg-emerald-400/15 rounded-md animate-next-char' : ''}
+                `}
               >
                 {/* Blinking Caret on current character */}
                 {isCurrent && (

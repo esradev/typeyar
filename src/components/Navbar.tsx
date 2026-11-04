@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Navigation Tabs */}
-        <nav className="flex items-center gap-1 p-1 bg-neutral-100/90 dark:bg-neutral-800/70 rounded-xl text-xs font-medium overflow-x-auto max-w-full">
+        <nav className="scrollbar-hide flex min-w-0 items-center gap-1 p-1 bg-neutral-100/90 dark:bg-neutral-800/70 rounded-xl text-xs font-medium overflow-x-auto max-w-full">
           <button
             type="button"
             onClick={() => onSelectTab('practice')}

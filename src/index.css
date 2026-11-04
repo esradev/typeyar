@@ -25,3 +25,25 @@
 .animate-caret {
   animation: blink 1s infinite;
 }
+
+@keyframes next-char-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgb(16 185 129 / 0%);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgb(16 185 129 / 18%);
+  }
+}
+
+.animate-next-char {
+  animation: next-char-pulse 1.4s ease-in-out infinite;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
